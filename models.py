@@ -56,3 +56,6 @@ class NewBusiness(models.Model):
     city = models.ForeignKey(City)
     state = models.CharField(max_length=105)
     zip_code = models.ForeignKey(ZipCode)
+    
+    def __unicode__(self):
+        return self.name
