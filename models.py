@@ -58,7 +58,7 @@ class NewBusiness(models.Model):
     zip_code = models.ForeignKey(ZipCode)
     
     class Meta:
-        verbose_name_plural = 'businesses'
+        verbose_name_plural = 'new businesses'
     
     def __unicode__(self):
         return self.name
