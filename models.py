@@ -16,27 +16,27 @@ class City(models.Model):
 
 class NewBusiness(models.Model):
     ENTITY_TYPE = (
-        'Assumed biz name',    'Assumed business name',
-        'Co-op',               'Cooperative',
-        'Dmtc biz corp',       'Dmtcestic business corporation',
-        'Dmtc llco',           'Dmtcestic limited liability company',
-        'Dmtc llp',            'Dmtcestic limited partnership',
-        'Dmtc nonprofit corp', 'Dmtcestic nonprofit corporation',
-        'Dmtc pro corp',       'Dmtcestic professional corporation',
-        'Dmtc reg llp',        'Dmtcestic registered limited liability partnership',
-        'Fgn biz corp',        'Foreign business corporation',
-        'Fgn biz trust',       'Foreign business trust',
-        'Fgn llco',            'Foreign limited liability company',
-        'Fgn llp',             'Foreign limited partnership',
-        'Fgn nonprofit corp',  'Foreign nonprofit corporation',
-        'Fgn pro corp',        'Foreign professional corporation',
-        'Fgn reg llp',         'Foreign registered limited liability partnership',
+        ('Assumed biz name',    'Assumed business name'),
+        ('Co-op',               'Cooperative'),
+        ('Dmtc biz corp',       'Dmtcestic business corporation'),
+        ('Dmtc llco',           'Dmtcestic limited liability company'),
+        ('Dmtc llp',            'Dmtcestic limited partnership'),
+        ('Dmtc nonprofit corp', 'Dmtcestic nonprofit corporation'),
+        ('Dmtc pro corp',       'Dmtcestic professional corporation'),
+        ('Dmtc reg llp',        'Dmtcestic registered limited liability partnership'),
+        ('Fgn biz corp',        'Foreign business corporation'),
+        ('Fgn biz trust',       'Foreign business trust'),
+        ('Fgn llco',            'Foreign limited liability company'),
+        ('Fgn llp',             'Foreign limited partnership'),
+        ('Fgn nonprofit corp',  'Foreign nonprofit corporation'),
+        ('Fgn pro corp',        'Foreign professional corporation'),
+        ('Fgn reg llp',         'Foreign registered limited liability partnership'),
     )
     
     ASSOCIATED_NAME_TYPE = (
-        'auth_rep',  'Authorized representative',
-        'mail_add',  'Mailing address',
-        'reg_agent', 'Registered agent',
+        ('auth_rep',  'Authorized representative'),
+        ('mail_add',  'Mailing address'),
+        ('reg_agent', 'Registered agent'),
     )
     
     registry = models.IntegerField()
