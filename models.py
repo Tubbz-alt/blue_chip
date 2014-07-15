@@ -57,5 +57,8 @@ class NewBusiness(models.Model):
     state = models.CharField(max_length=105)
     zip_code = models.ForeignKey(ZipCode)
     
+    class Meta:
+        verbose_name_plural = 'businesses'
+    
     def __unicode__(self):
         return self.name
