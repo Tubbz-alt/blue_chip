@@ -1,3 +1,7 @@
 from django.contrib import admin
+from blue_chip.models import NewBusiness
 
-# Register your models here.
+class NewBusinessAdmin(admin.ModelAdmin):
+    pass
+
+admin.site.register(NewBusiness, NewBusinessAdmin)
