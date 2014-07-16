@@ -43,7 +43,7 @@ class NewBusiness(models.Model):
     name = models.CharField(max_length=200)
     entity_type = models.CharField(max_length=35, choices=ENTITY_TYPE)
     registry_date = models.DateField()
-    assoc_name_type = models.CharField(max_length=20, choices=ASSOCIATED_NAME_TYPE)
+    assoc_name_type = models.CharField(max_length=30, choices=ASSOCIATED_NAME_TYPE)
     first_name = models.CharField(max_length=110)
     middle_name = models.CharField(max_length=115)
     last_name = models.CharField(max_length=120)
